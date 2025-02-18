@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!-- All the images have been changed to a new image hosting called "Free Image Host" you may find the website here: https://freeimage.host/ -->
+<html> <!--Manually Coded by Francesco Gabriel A. Obligacion of 9 - St. John for Community Outreach Webpage-->
+    <head>
+        <title>Programs | Sikap, Tulong, Ahon</title>
+        <style>
+            /*Fonts (Font | UsedWhere)*/
+            @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap'); /*DM Serif Text | Navigation Buttons Font*/
+            @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap'); /*Markazi Text | Program H1*/
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); /*Open Sans | Program Paragraph*/
+
+            /*Whole HTML File*/
+            html {
+                scroll-behavior: smooth;
+            }
+
+            /*Body*/
+            body{
+                background-color: #FFF8E1;
+                margin: 0;
+            }
+
+            /*Navigation Bar*/
+            nav{ /*Main Navigation Bar*/
+                background-color: #FFD700;
+                display: flex;
+                justify-content: flex-end;
+                font-size: 150%; /*Text-Size*/
+                border-radius: 10px;
+            }
+            
+            nav a{ /*Navigation Buttons*/
+                background-color: #FFD700;
+                color: #3E2723;
+                text-decoration: none;
+                font-family: 'DM Serif Text';
+                display: block;
+                padding: 15px;
+                text-align: center;
+                position: relative;
+                margin-right: 20px;
+                transition: transform .2s;
+            }
+
+            nav a[href="donation.html"]{
+                color: #4169E1;
+                background-color: #FFFFFF;
+                border: 2px solid #FFFFFF;
+                border-radius: 25px;
+                padding: 12px 30px;
+            }
+
+            nav li:first-child{ /*For Logo and Navigation Buttons Alignment*/
+                position: sticky;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                margin-right: auto;
+            }
+
+            nav ul{
+                align-items: center;
+                list-style-type: none;
+                display: flex;
+                gap: 20px;
+                margin: 0px;
+                padding: 0px;
+                flex-grow: 1;
+            }
+
+            #PRCLOGO{
+                margin: 5%;
+                width: 100px;
+                height: 100px;
+            }
+
+            /*End for Navigation*/
+
+            /*Programs*/
+            #Programs{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            #Programs img{
+                width: 40%;
+                height: auto;
+            }
+
+            #Programs p{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                font-size: 130%;
+                font-family: 'Open Sans';
+                font-weight: bolder;
+            }
+
+            #Programs p{
+                line-height: 2;
+                margin: 0;
+            }
+            /*End for Programs*/
+
+            /*Project Goals and Project People*/
+            #ProgramContainer{
+                display: flex;
+                gap: 20px;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            #Project-Goals, #Program-People{
+                background-color: #E9252B;
+                padding: 20px;
+                border-radius: 10px;
+                max-width: 50%;
+                max-height: 50%;
+                margin-top: 30px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 0;
+            }
+
+            #Program-People{
+                background-color: #FFD700;
+            }
+
+            #Project-Goals h2, #Program-People h2{
+                font-family: 'Markazi Text';
+                color: #93d5f0;
+                font-size: 300%;
+            }
+
+            #Program-People h2{
+                color:#003366;
+            }
+
+            #Project-Goals p, #Program-People p{
+                color: #FFFFFF;
+                font-family: 'Open Sans';
+                font-size: 130%;
+                line-height: 1.6;
+                text-align: center;
+            }
+
+            #Program-People p{
+                color: #3E2723;
+            }
+            /*End for Project Goals and Project People*/
+            
+            /*Donation*/
+            #Donation{
+                text-align: center;
+            }
+
+            #Donation h2{
+                font-size: 300%;
+                font-family: 'Markazi Text';
+                margin-bottom: 0.3%;
+            }
+
+            #ButtonDonation{
+                display: inline-block;
+                background-color: #003366;
+                color: #FFF8E1;
+                text-decoration: none;
+                padding: 15px 30px;
+                border-radius: 5px;
+                font-size: 180%;
+                transition: transform 2s;
+            }
+            /*End for Donation*/
+
+            /*Footer*/
+            footer{
+                background-color: #8C8C8C;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                position: relative;
+                bottom: 0;
+                width: 97.92%;
+                margin-top: 1%;
+            }
+
+            footer p{
+                margin: 5px 0;
+            }
+
+            footer .social-links a{
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+            /*End for Footer*/
+
+            /*Pseudo Elements*/
+            /*Navigation Pseudo*/
+            nav a:hover{ /*When Hovered, Change Background Color to White and Scale 120%*/
+                background-color: #ffffff;
+                transform: scale(1.2);
+            }
+
+            nav a:hover::after{
+                content: '';
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background-color: #64abf1;
+            }
+
+            /*Donation*/
+            #ButtonDonation:hover{
+                transform: scale(1.2);
+                background-color: #002244;
+            }
+
+            /*Footer*/
+
+            footer .social-links a:hover{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><img id="PRCLOGO" src="https://iili.io/2mUPz7V.png" alt="CommunityLogo"></li>
+                    <li><a href="index.html">Home</a></li> <!--Home-->
+                    <li><a href="about.html">About Us</a></li> <!--About Us-->
+                    <li><a href="programs.html">Programs</a></li> <!--Programs-->
+                    <li><a href="contact.html">Contact</a></li> <!--Contact Information-->
+                    <li><a href="donation.html">Get Involved</a></li> <!--Donation/Get Involved-->
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div id="Programs">
+                    <img src="https://iili.io/2mUP5Lg.png" alt="SIKAP, TULONG, AHON">
+                    <p>Our program, "Sikap, Tulong, Ahon," is dedicated to expressing gratitude to the selfless volunteers of the Philippine Red Cross Marikina Chapter. Through this initiative, we provide appreciation gifts as a way to recognize their invaluable contributions to the community. By doing so, we aim to inspire continued commitment to humanitarian work and encourage others to contribute to the cause.</p>
+                </div>
+
+                <div id="ProgramContainer">
+                    <div id="Project-Goals">
+                        <h2>Program Goals</h2>
+                        <p>The primary goal of "Sikap, Tulong, Ahon" is to recognize and appreciate the tireless work of the volunteers from the Philippine Red Cross Marikina Chapter. Through the distribution of appreciation gifts, we aim to uplift the spirits of these volunteers and show them that their work is truly valued. Additionally, we hope to raise awareness about the vital role that the Philippine Red Cross plays in disaster response, blood donation drives, and humanitarian efforts.</p>
+                    </div>
+
+                    <div id="Program-People">
+                        <h2>How Our Programs Helps People</h2>
+                        <p>Through the "Sikap, Tulong, Ahon" program, we aim to create a ripple effect of positivity and compassion. By recognizing the efforts of our volunteers, we are not only boosting their morale but also strengthening the entire community. When volunteers feel appreciated, they are more motivated to continue helping others, which in turn improves the well-being of the people they serve. Additionally, our program helps by raising awareness about the importance of volunteer work and encouraging more individuals to join the cause. As more volunteers participate, we are able to reach and support more people in need, creating a more resilient and compassionate society.</p>
+                    </div>
+                </div>
+
+                <div id="Donation">
+                    <h2>Want To Give Back To Volunteer Workers Via Our Program? Learn More Below</h2>
+                    <a href="donation.html" id="ButtonDonation" alt="Donate Here">Donate Here</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Sikap, Tulong, Ahon. All Rights Reserved.</p>
+            <p>Contact us (Leader): <a href="mailto:faobligacion@maristschool.edu.ph">faobligacion@maristschool.edu.ph</a></p>
+            <div class="social-links">
+                <a href="index.html" target="_blank">Website</a> | 
+                <a href="contact.html" target="_blank">Contact</a> | 
+                <a href="about.html" target="_blank">About</a>
+            </div>
+        </footer>
+    </body>
+</html>

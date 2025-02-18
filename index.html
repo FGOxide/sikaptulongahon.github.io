@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!-- All the images have been changed to a new image hosting called "Free Image Host" you may find the website here: https://freeimage.host/ -->
+<html> <!--Manually Coded by Francesco Gabriel A. Obligacion of 9 - St. John for Community Outreach Webpage-->
+    <head>
+        <title>Home | Sikap, Tulong, Ahon</title>
+        <style>
+            /*Fonts (Font | UsedWhere)*/
+            @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap'); /*DM Serif Text | Navigation Buttons Font*/
+            @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap'); /*Markazi Text | About H1*/
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); /*Open Sans | About Paragraph*/
+            @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap'); /*Sriracha*/
+
+            /*Body*/
+            body{
+                background-color: #FFF8E1;
+                margin: 0;
+            }
+
+            /*Whole HTML File*/
+            html {
+                scroll-behavior: smooth;
+            }
+
+            /*Navigation Bar*/
+            nav{ /*Main Navigation Bar*/
+                background-color: #FFD700;
+                display: flex;
+                justify-content: flex-end;
+                font-size: 150%; /*Text-Size*/
+                font-family: 'DM Serif Text', serif;
+                border-radius: 10px;
+                position: sticky;
+            }
+            
+            nav a{ /*Navigation Buttons*/
+                background-color: #FFD700;
+                color: #3E2723;
+                text-decoration: none;
+                display: block;
+                padding: 15px;
+                text-align: center;
+                position: relative;
+                margin-right: 20px;
+                transition: transform .2s;
+            }
+
+            nav a[href="donation.html"]{
+                color: #4169E1;
+                background-color: #FFFFFF;
+                border: 2px solid #FFFFFF;
+                border-radius: 25px;
+                padding: 12px 30px;
+            }
+
+            nav li:first-child{ /*For Logo and Navigation Buttons Alignment*/
+                display: flex;
+                align-items: center;
+                height: 100%;
+                margin-right: auto;
+            }
+
+            nav ul{
+                align-items: center;
+                list-style-type: none;
+                display: flex;
+                gap: 20px;
+                margin: 0px;
+                padding: 0px;
+                flex-grow: 1;
+                position: sticky;     
+            }
+
+            #PRCLOGO{
+                margin: 5%;
+                width: 100px;
+                height: 100px;
+            }
+
+            /*End for Navigation*/
+
+            /*Welcome Section*/
+            .Welcome{
+                background-color: #FFF8E1;
+                text-align: center;
+                font-family: 'Sriracha';
+                font-size: x-large;
+                position: relative;
+            }
+
+            .Welcome img{
+                width: 100%;
+                height: 100%;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .Welcome h1{
+                color: #FFFFFF;
+                margin-top: 20px;
+                font-size: 24px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 30%;
+                background: rgba(0, 0, 0, 0.5);
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            .Welcome p{
+                color: #FFFFFF;
+                font-size: 18px;
+                line-height: 1.5;
+                margin: 20px auto;
+                max-width: 600px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 50%;
+                background: rgba(0, 0, 0, 0.5);
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            #WelcomeText{
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            .button1{
+                display: inline-block;
+                background-color: #003366;
+                color: #FFF8E1;
+                text-decoration: none;
+                padding: 15px 30px;
+                border-radius: 5px;
+                font-size: 16px;
+                margin-top: 20px;
+                transition: transform 2s;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 70%
+            }
+            /*End for Welcome*/
+
+            /*About*/
+            #About{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            
+            #AboutContent{
+                /*Other*/
+                background-color: #E9252B;
+                padding: 0.5%;
+                /*Text*/
+                font-size: 150%;
+                justify-content: center;
+                gap: 5%;
+                display: flex;
+                align-items: center;
+                color: hsl(0, 0%, 89%);
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            }
+
+            #About h1{
+                background-color: #ffffff;
+                color:#2903d3;
+                text-align: center;
+                font-family: 'Markazi Text', serif;
+                font-size: 500%;
+                margin-top: 20px;
+                margin-bottom: 0;
+                border-top-left-radius: 60%;
+                border-top-right-radius: 60%;
+            }
+
+            #About p{
+                font-family: 'Open Sans';
+                font-weight: bolder;
+                text-align: justify;
+                margin: 0;
+                max-width: 40%;
+            }
+
+            #AboutContent img{
+                flex: 1;
+                max-width: 40%;
+                max-height: 40%;
+            }
+            
+            #About > img{
+                margin: 0.5%;
+                align-self: center;
+                flex: 1;
+                max-width: 10%;
+                max-height: 10%;
+            }
+
+            /*End for About*/
+
+            /*Programs*/
+            #Programs{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            #Programs img{
+                max-width: 40%;
+                height: auto;
+            }
+
+            #ProgramsText{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                font-size: 130%;
+                font-family: 'Open Sans';
+                font-weight: bolder;
+            }
+
+            #ProgramsText p{
+                line-height: 2;
+                margin: 0;
+            }
+
+            #PrP1{
+                color:#003366;
+                font-size: larger;
+                font-family: 'Sriracha', cursive;
+                font-weight: lighter;
+            }
+            /*End for Programs*/
+
+            /*News & Events*/
+            #News{
+                background-color: #E9252B;
+                color: #FFFFFF;
+                text-align: center;
+                font-family: 'Open Sans';
+                padding: 0.5%;
+                margin-top: 2%;
+            }
+            /*End for News & Events*/
+
+            /*Call-to-Action*/
+            #CallToAction{
+                align-items: center;
+                text-align: center;
+            }
+
+            #CallToAction h1{
+                margin: 0;
+                color:#003366;
+                background-color: #FFFFFF;
+                font-family: 'Markazi Text',serif;
+                font-size: 520%;
+            }
+
+            #CallToAction p{
+                text-align: center;
+                font-family: 'Open Sans';
+                font-size: 150%;
+                font-weight: bolder;
+                width: 70%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            #Donation{
+                text-decoration: none;
+                background-color: #003366;
+                color: #FFFFFF;
+                font-size: 150%;
+                font-family: 'Sriracha', cursive;
+                border: 2px solid #003366;
+                border-radius: 5px;
+                padding: 15px 50px;
+                display: inline-block;
+                animation: pulse 2s infinite;
+                animation-play-state: running;
+            }
+
+            @keyframes pulse{
+                0% {
+                    transform: scale(1);
+                }
+                
+                50% {
+                    transform: scale(1.2);
+                }
+                
+                100%{
+                    transform: scale(1)
+                }
+            }
+
+            /*End for Call-to-Action*/
+
+            /*Footer*/
+            footer{
+                background-color: #8C8C8C;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                position: relative;
+                bottom: 0;
+                width: 97.92%;
+                margin-top: 1%;
+            }
+
+            footer p{
+                margin: 5px 0;
+            }
+
+            footer .social-links a{
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+            /*End for Footer*/
+
+            /*Pseudo Elements*/
+            /*Navigation Pseudo*/
+            nav a:hover{ /*When Hovered, Change Background to White and Scale 1.2x*/
+                background-color: #ffffff;
+                transform: scale(1.2);
+            }
+
+            nav a:hover::after{
+                content: '';
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background-color: #64abf1;
+            }
+
+            /*Welcome Section*/
+            .button1:hover{
+                transform: translateX(-50%) scale(1.5);
+                background-color: #002244;
+            }
+
+            /*Call-To-Action*/
+            #Donation:hover{
+                animation-play-state: paused;
+                background-color: #002244;
+            }
+
+            /*Footer*/
+
+            footer .social-links a:hover{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><img id="PRCLOGO" src="https://iili.io/2mUPz7V.png" alt="CommunityLogo"></li>
+                    <li><a href="index.html">Home</a></li> <!--Home-->
+                    <li><a href="about.html">About Us</a></li> <!--About Us-->
+                    <li><a href="programs.html">Programs</a></li> <!--Programs-->
+                    <li><a href="contact.html">Contact</a></li> <!--Contact Information-->
+                    <li><a href="donation.html">Get Involved</a></li> <!--Donation/Get Involved-->
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="Welcome">
+                    <img id="MWA" src="https://iili.io/2yY6oua.jpg" alt="Marist Waiting Area">
+                    <div id="WelcomeText">
+                        <h1>EVERY ACT OF KINDNESS DESERVES RECOGNITION</h1> <!--Hook-->
+                        <p>We're here to give back to the heroes who give so much! Join us in showing appreciation to the volunteers of the Red Cross Marikina Chapter.</p>
+                    </div>
+
+                    <a href="#About" class="button1">Learn More About This Project</a>
+                </div>
+
+                <div id="About">
+                    <h1>W  H  Y  ?</h1>
+                    <div id="AboutContent">
+                        <img src="https://iili.io/2mUPAI1.jpg" alt="PRC FOOD TRUCK KRISTINE">
+                        <p>The Philippine Red Cross (PRC) is known for its life-saving blood donation drives and unwavering support during typhoons and natural disasters, providing relief, rescue, and medical assistance. Despite their critical efforts, their contributions are often overlooked. This community outreach project recognizes their dedication by showing appreciation through the distribution of appreciation gifts to PRC volunteers specifically in Marikina Chapter.</p>
+                    </div>
+                </div>
+
+                <div id="Programs">
+                    <img src="https://iili.io/2mUPRhF.png" alt="PRCxMARIST">
+                    <div id="ProgramsText">
+                        <p>Our program entitled "Sikap, Tulong, Ahon" is dedicated to expressing gratitude to the selfless volunteers of the Philippine Red Cross Marikina Chapter by providing them with appreciation gifts. It’s our way of recognizing their invaluable service and inspiring continued commitment to humanitarian work.</p>
+                        <p id="PrP1">EXPECTED DATE: JANUARY 14, 2025 / TUESDAY</p>
+                    </div>
+                </div>
+
+                <div id="News">
+                    <h1>CURRENT STATUS: REQUEST WITHDRAWN</h1>
+                </div>
+
+                <div id="CallToAction">
+                    <h1>Seen Enough?</h1>
+                    <p>Join us in showing gratitude to the hardworking volunteers of the Philippine Red Cross Marikina Chapter! Your support can help us provide appreciation gifts and let them know their efforts truly make a difference—together, let’s give back to those who give so much!</p>
+                    <a href="donation.html" id="Donation">Get Involved</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Sikap, Tulong, Ahon. All Rights Reserved.</p>
+            <p>Contact us (Leader): <a href="mailto:faobligacion@maristschool.edu.ph">faobligacion@maristschool.edu.ph</a></p>
+            <div class="social-links">
+                <a href="index.html" target="_blank">Website</a> | 
+                <a href="contact.html" target="_blank">Contact</a> | 
+                <a href="about.html" target="_blank">About</a>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!-- All the images have been changed to a new image hosting called "Free Image Host" you may find the website here: https://freeimage.host/ -->
+<html> <!--Manually Coded by Francesco Gabriel A. Obligacion of 9 - St. John for Community Outreach Webpage-->
+    <head>
+        <title>About | Sikap, Tulong, Ahon</title>
+        <style>
+            /*Fonts (Font | UsedWhere)*/
+            @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap'); /*DM Serif Text | Navigation Buttons Font*/
+            @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap'); /*Markazi Text | About H1*/
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); /*Open Sans | About Paragraph*/
+
+            /*Whole HTML File*/
+            html {
+                scroll-behavior: smooth;
+            }
+
+            /*Body*/
+            body{
+                background-color: #FFF8E1;
+                margin: 0;
+            }
+
+            /*Navigation Bar*/
+            nav{ /*Main Navigation Bar*/
+                background-color: #FFD700;
+                display: flex;
+                justify-content: flex-end;
+                font-size: 150%; /*Text-Size*/
+                border-radius: 10px;
+            }
+            
+            nav a{ /*Navigation Buttons*/
+                background-color: #FFD700;
+                color: #3E2723;
+                text-decoration: none;
+                font-family: 'DM Serif Text';
+                display: block;
+                padding: 15px;
+                text-align: center;
+                position: relative;
+                margin-right: 20px;
+                transition: transform .2s;
+            }
+
+            nav a[href="donation.html"]{
+                color: #4169E1;
+                background-color: #FFFFFF;
+                border: 2px solid #FFFFFF;
+                border-radius: 25px;
+                padding: 12px 30px;
+            }
+
+            nav li:first-child{ /*For Logo and Navigation Buttons Alignment*/
+                position: sticky;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                margin-right: auto;
+            }
+
+            nav ul{
+                align-items: center;
+                list-style-type: none;
+                display: flex;
+                gap: 20px;
+                margin: 0px;
+                padding: 0px;
+                flex-grow: 1;
+            }
+
+            #PRCLOGO{
+                margin: 5%;
+                width: 100px;
+                height: 100px;
+            }
+            
+            /*End for Navigation*/
+
+                        /*About*/
+                        #About{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            
+            #AboutContent{
+                /*Other*/
+                padding: 0.5%;
+                /*Text*/
+                font-size: 150%;
+                justify-content: center;
+                gap: 5%;
+                display: flex;
+                align-items: center;
+                color: #E9252B;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            }
+
+            #About h1{
+                color:#2903d3;
+                text-align: center;
+                font-family: 'Markazi Text';
+                font-size: 500%;
+                margin-top: 20px;
+                margin-bottom: 0;
+                border-top-left-radius: 60%;
+                border-top-right-radius: 60%;
+            }
+
+            #About p{
+                font-family: 'Open Sans';
+                font-weight: bolder;
+                text-align: justify;
+                margin: 0;
+                max-width: 40%;
+            }
+
+            #AboutContent img{
+                flex: 1;
+                max-width: 40%;
+                max-height: 40%;
+            }
+            
+            #About > img{
+                margin: 0.5%;
+                align-self: center;
+                flex: 1;
+                max-width: 10%;
+                max-height: 10%;
+            }
+
+            /*End for About*/
+
+            /*Quote*/
+            #Quote{
+                background-color: #E9252B;
+                color: #FFFFFF;
+                font-size: 130%;
+                text-align: center;
+                font-family: 'Markazi Text';
+                font-weight: bolder;
+                font-weight: 50;
+                padding: 0.5%;
+                margin-bottom: 2%;
+            }
+            /*End for Quote*/
+
+            /*Goals*/
+            #GoalPeople{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            #GoalPeople img{
+                width: 40%;
+                height: auto;
+            }
+
+            #GoalPeopleText{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                font-size: 130%;
+                font-family: 'Open Sans';
+                font-weight: bolder;
+            }
+
+            #GoalPeopleText p{
+                line-height: 2;
+                margin: 0;
+            }
+
+            #ProgramsButton{
+                display: inline-block;
+                background-color: #003366;
+                color: #FFF8E1;
+                text-decoration: none;
+                padding: 15px 30px;
+                border-radius: 5px;
+                font-size: 16px;
+                margin-top: 20px;
+                animation: pulse 2s infinite;
+                animation-play-state: running;
+                max-width: 300px;
+                width: auto;
+                align-self: center;
+            }
+
+            @keyframes pulse{
+                0% {
+                    transform: scale(1);
+                }
+                
+                50% {
+                    transform: scale(1.5);
+                }
+                
+                100%{
+                    transform: scale(1)
+                }
+            }
+            /*End for Goals*/
+
+            /*Members*/
+
+            #Members h1{
+                background-color: #E9252B;
+                color: #FFFFFF;
+                font-family: 'Markazi Text';
+                font-size: 200%;
+                text-align: center;
+                padding: 0.5%;
+            }
+
+            .team{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+
+            .team-member{
+                background: #f4f4f4;
+                border: 1px solid #ddd;
+                padding: 15px;
+                border-radius: 8px;
+                text-align: center;
+                width: 200px;
+            }
+
+            .team-member img{
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-bottom: 10px;
+                background: #ccc;
+            }
+            /*End for Members*/
+
+            /*Footer*/
+            footer{
+                background-color: #8C8C8C;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                position: relative;
+                bottom: 0;
+                width: 97.92%;
+                margin-top: 1%;
+            }
+
+            footer p{
+                margin: 5px 0;
+            }
+
+            footer .social-links a{
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+            /*End for Footer*/
+
+            /*Pseudo Elements*/
+            /*Navigation Pseudo*/
+            nav a:hover { /*When Hovered, Change Background Color to White and Scale 120%*/
+                background-color: #ffffff;
+                transform: scale(1.2);
+            }
+
+            nav a:hover::after {
+                content: '';
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background-color: #64abf1;
+            }
+
+            /*Program Pseudo*/
+            #ProgramsButton:hover{
+                transform: scale(1.5);
+                background-color: #002244;
+            }
+
+            /*Footer*/
+
+            footer .social-links a:hover{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><img id="PRCLOGO" src="https://iili.io/2mUPz7V.png" alt="CommunityLogo"></li>
+                    <li><a href="index.html">Home</a></li> <!--Home-->
+                    <li><a href="about.html">About Us</a></li> <!--About Us-->
+                    <li><a href="programs.html">Programs</a></li> <!--Programs-->
+                    <li><a href="contact.html">Contact</a></li> <!--Contact Information-->
+                    <li><a href="donation.html">Get Involved</a></li> <!--Donation/Get Involved-->
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div id="About">
+                    <h1>ABOUT OUR PROJECT</h1>
+                    <div id="AboutContent">
+                        <img src="https://iili.io/2mUPRhF.png" alt="PRCxMARIST">
+                        <p>The Philippine Red Cross (PRC) plays a vital role in saving lives through blood donation drives, rescue operations, and providing relief during disasters. Despite their tireless efforts, PRC volunteers often go unrecognized for their dedication. Our program, "Sikap, Tulong, Ahon," aims to honor the selfless volunteers of the PRC Marikina Chapter by distributing appreciation gifts. Through this initiative, we hope to recognize their invaluable service and inspire continued commitment to humanitarian work.</p>
+                    </div>
+                </div>
+
+                <div id="Quote">
+                    <h1>"HONORING SELFLESS HEROES, INSPIRING GRATITUDE"</h1>
+                </div>
+
+                <div id="GoalPeople">
+                    <img src="https://iili.io/2mUP5Lg.png" alt="SIKAP, TULONG, AHON">
+                    <div id="GoalPeopleText">
+                        <p>Our goal is to honor the dedication of Philippine Red Cross Marikina Chapter volunteers by showing gratitude for their selfless service and inspiring others to support humanitarian efforts.</p>
+                        <a href="programs.html" id="ProgramsButton" alt="Programs">Learn More About Our Program Here</a>
+                    </div>
+                </div>
+
+                <div id="Members">
+                    <h1>Meet Our Team</h1>
+                    <div class="team">
+                        <div class="team-member">
+                            <img src="https://lh3.googleusercontent.com/a/ACg8ocL7umLDQsZxtlz0a2yOBa2WS-hn4BJWBQcztcxv5zXkFQdW0JiI=s288-c-no" alt="Profile">
+                            <h3>Francesco Obligacion</h3> <!--Name-->
+                            <p>Project Leader and Website Programmer</p> <!--Role-->
+                        </div>
+
+                        <div class="team-member">
+                            <img src="https://iili.io/2mUP02R.jpg" alt="Member Profile">
+                            <h3>Ezekiel Pacheo</h3> <!--Name-->
+                            <p>Asst. Leader and Program Logo Designer</p> <!--Role-->
+                        </div>
+
+                        <div class="team-member">
+                            <img src="https://iili.io/2mUPnrx.jpg" alt="Member Profile">
+                            <h3>John Salazar</h3> <!--Name-->
+                            <p>Ambassadors</p> <!--Role-->
+                        </div>
+
+                        <div class="team-member">
+                            <img src="https://iili.io/2mUPTmP.jpg" alt="Member Profile">
+                            <h3>Rogelio Aventino</h3> <!--Name-->
+                            <p>Ambassadors</p> <!--Role-->
+                        </div>
+
+                        <div class="team-member">
+                            <img src="https://iili.io/2mUPxdQ.png" alt="Member Profile">
+                            <h3>Jacob Reyes</h3> <!--Name-->
+                            <p>Ambassadors</p> <!--Role-->
+                        </div>
+                    </div>
+                    <p style="text-align:center; margin-top: 20px;">
+                        Updated Photos for some team members are coming soon!
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Sikap, Tulong, Ahon. All Rights Reserved.</p>
+            <p>Contact us (Leader): <a href="mailto:faobligacion@maristschool.edu.ph">faobligacion@maristschool.edu.ph</a></p>
+            <div class="social-links">
+                <a href="index.html" target="_blank">Website</a> | 
+                <a href="contact.html" target="_blank">Contact</a> | 
+                <a href="about.html" target="_blank">About</a>
+            </div>
+        </footer>
+    </body>
+</html>
